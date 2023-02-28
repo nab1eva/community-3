@@ -181,7 +181,6 @@ input:focus {
   }
 }
 main .content {
-  background-color: pink;
   padding-top: 176px;
 }
 main .content h4 {
@@ -331,7 +330,6 @@ main .culture .culture-bottom {
 }
 main .culture .culture-bottom .card {
   padding: 32px;
-  background-color: pink;
   display: inline-block;
 }
 main .culture .culture-bottom .card h2 {
