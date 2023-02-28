@@ -1,0 +1,152 @@
+.df-jcsb-aic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header {
+  padding: 40px 0px;
+  background-color: #232536;
+  overflow: hidden;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+
+  .nav-left {
+    column-gap: 130px;
+
+    .nav-lists {
+      column-gap: 50px;
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        opacity: 0.9;
+
+        &:hover {
+          color: #ffd2a4;
+          transition: 1s;
+        }
+      }
+    }
+  }
+
+  .nav-right {
+    .nav-lists {
+      column-gap: 32px;
+
+      img {
+        margin-left: 7px !important;
+      }
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+
+        color: #ffffff;
+
+        opacity: 0.6;
+
+        &:hover {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          opacity: 1;
+
+          color: #ffd3af;
+
+          transition: 0.5s;
+        }
+      }
+    }
+    .icon {
+      background-color: transparent;
+      .fa-bars {
+        width: 20px;
+        font-size: 30px;
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+/*-- navigation bar mobile---*/
+#navbar-responsive {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -100%;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #232536;
+  transition: 0.7s;
+
+  .nav-box {
+    display: flex;
+    justify-content: right;
+
+    #navbar-close {
+      background-color: transparent;
+      border: none;
+      margin: 35px 22px 0px 0px;
+      img {
+        width: 30px;
+      }
+      &:hover {
+        transform: rotate(360deg);
+        transition: 1s;
+      }
+    }
+  }
+
+  .nav-position {
+    text-align: center;
+
+    li {
+      margin: 25px 0px;
+
+      a {
+        font-weight: 400;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        opacity: 0.9;
+
+        &:hover {
+          color: #ffd2a4;
+          transition: 1s;
+        }
+      }
+    }
+  }
+}
+/*-- navigation bar mobile---*/
+
+@media (min-width: 900px) {
+  header {
+    #navbar-open {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    .nav-lists {
+      display: none;
+    }
+
+    .primary-button {
+      display: none;
+    }
+  }
+}
