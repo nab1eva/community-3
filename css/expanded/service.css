@@ -131,6 +131,7 @@ input:focus {
   align-items: center;
   background-color: #232536;
   transition: 0.7s;
+  opacity: 0.95;
 }
 #navbar-responsive .nav-box {
   display: flex;
