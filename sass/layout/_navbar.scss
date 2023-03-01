@@ -96,6 +96,7 @@
       }
     }
     .icon {
+      border: none;
       background-color: transparent;
       .fa-bars {
         width: 20px;
@@ -128,7 +129,7 @@
     #navbar-close {
       background-color: transparent;
       border: none;
-      margin: 35px 22px 0px 0px;
+      margin: 35px 15px 0px 0px;
       img {
         width: 30px;
       }

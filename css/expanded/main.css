@@ -137,6 +137,7 @@ input:focus {
   transition: 0.5s;
 }
 #header .nav-right .icon {
+  border: none;
   background-color: transparent;
 }
 #header .nav-right .icon .fa-bars {
@@ -167,7 +168,7 @@ input:focus {
 #navbar-responsive .nav-box #navbar-close {
   background-color: transparent;
   border: none;
-  margin: 35px 22px 0px 0px;
+  margin: 35px 15px 0px 0px;
 }
 #navbar-responsive .nav-box #navbar-close img {
   width: 30px;
