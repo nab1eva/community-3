@@ -1,0 +1,23 @@
+@mixin btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: top left;
+  color: #ffffff;
+  opacity: 0.87;
+  border: none;
+  background-image: url(../../images/service/button.svg);
+  background-color: #444CFC ;
+  transition: 0.5s;
+  &:hover {
+    transform: scale(1.05);
+
+  }
+}
