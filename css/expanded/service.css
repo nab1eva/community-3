@@ -258,7 +258,7 @@ input:focus {
   opacity: 0.87;
   border: none;
   background-image: url(../../images/service/button.svg);
-  background-color: #444CFC;
+  background-color: #444cfc;
   transition: 0.5s;
 }
 .home-left button:hover {
@@ -277,9 +277,15 @@ input:focus {
   color: #232536;
 }
 
+#about {
+  background: #f9f9ff;
+  padding-bottom: 96px;
+}
+
 .about-top {
   position: relative;
-  margin-top: 96px;
+  padding-top: 96px;
+  margin-bottom: 28px;
 }
 .about-top p {
   font-style: normal;
@@ -313,11 +319,12 @@ input:focus {
 }
 .about-top img {
   position: absolute;
-  top: 0;
+  top: 90px;
   right: 0;
 }
 
 .about-content .card {
+  margin-top: 40px;
   cursor: pointer;
   position: relative;
   padding: 32px 11px 28px 32px;
@@ -336,10 +343,14 @@ input:focus {
   opacity: 0.2;
 }
 .about-content .card .img {
+  width: 100%;
   display: none;
   position: absolute;
   bottom: -14px;
   left: 0;
+}
+.about-content .card .img img {
+  width: 100%;
 }
 .about-content .card:hover .img {
   display: block;
@@ -349,7 +360,6 @@ input:focus {
   gap: 16px;
 }
 .about-content .card .card-content .icon img {
-  width: 100%;
   padding: 11px 12px;
   border-radius: 50%;
   background: rgba(255, 211, 175, 0.17);
@@ -373,6 +383,53 @@ input:focus {
   opacity: 0.6;
 }
 
+.row {
+  padding-bottom: 96px;
+}
+.row .left {
+  padding-top: 141px;
+}
+.row .left h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  opacity: 0.87;
+}
+.row .left h1 {
+  margin-top: 16px;
+  margin-bottom: 24px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  max-width: 624px;
+  color: #232536;
+}
+.row .left p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 622px;
+  color: #232536;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+
+#hero2 {
+  background: #ecf8f9;
+}
+
+#hero3 {
+  background: #ffffff;
+}
+
+#hero4 {
+  background: #f9f9ff;
+}
+
 @media (min-width: 800px) {
   .home-row {
     display: flex;
@@ -383,5 +440,15 @@ input:focus {
   }
   .home-row .home-right {
     margin-top: 48px;
+  }
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 140px;
   }
 }
