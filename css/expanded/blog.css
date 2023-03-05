@@ -225,7 +225,7 @@ footer section .container .sites {
     bottom: 64px;
     top: auto !important;
   }
-  .card {
+  .footer_top .card {
     padding: 96px !important;
   }
 }

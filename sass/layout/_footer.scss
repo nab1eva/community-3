@@ -51,7 +51,7 @@ footer {
       font-size: 16px;
       line-height: 24px;
       color: #232536;
-	  border: none;
+      border: none;
     }
   }
 }
@@ -157,8 +157,8 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-	  flex-wrap: wrap;
-	  gap: 20px;
+      flex-wrap: wrap;
+      gap: 20px;
       .logo {
         display: flex;
         gap: 50px;
@@ -167,7 +167,7 @@ footer {
           font-weight: 500;
           font-size: 16px;
           line-height: 24px;
-		  color: $text;
+          color: $text;
         }
       }
       .sites {
@@ -191,8 +191,10 @@ footer {
       }
     }
   }
-  .card{
-	padding: 96px !important;
+  .footer_top {
+    .card {
+      padding: 96px !important;
+    }
   }
 }
 
