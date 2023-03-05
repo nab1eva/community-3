@@ -218,6 +218,7 @@
 
   .right {
     cursor: pointer;
+    transition: 0.7s;
     &:hover {
       filter: grayscale(80%);
       transform: scale(0.95);
