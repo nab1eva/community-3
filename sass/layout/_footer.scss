@@ -3,18 +3,20 @@ $blue: #666dff;
 $text: #232536;
 $white: #ffffff;
 
-.footer_top {
+footer {
   background-color: $white;
+}
+.footer_top {
   padding-top: 96px;
+  padding-bottom: 96px;
   .card {
     position: relative;
-    padding: 96px;
+    padding: 50px;
     background-color: $blue;
     display: flex;
     flex-direction: column;
     gap: 50px;
     align-items: center;
-    margin-bottom: 96px;
     .shape1 {
       position: absolute;
       top: 0;
@@ -49,26 +51,148 @@ $white: #ffffff;
       font-size: 16px;
       line-height: 24px;
       color: #232536;
+	  border: none;
     }
   }
 }
 
 .footer_bottom {
   .container {
+    padding-top: 60px;
     position: relative;
-	padding-top: 60px;
+    .left {
+      color: $text;
+      padding-bottom: 64px;
+    }
     .shape3 {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 20px;
     }
     h1 {
       font-weight: 600;
       font-size: 48px;
       line-height: 58px;
-	  color: $text;
-	  max-width: 452px;
+      color: $text;
+      max-width: 458px;
     }
+    h6 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: $text;
+      margin: 40px 0 28px;
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: $text;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text;
+      max-width: 206px;
+      margin-top: 40px;
+    }
+    .right {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      .bold {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: $text;
+        li {
+          a {
+            display: flex;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: $text;
+          }
+        }
+      }
+      ul {
+        li {
+          a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: $text;
+            margin-bottom: 15px;
+            display: flex;
+          }
+        }
+      }
+      .contact {
+        position: absolute;
+        right: 0;
+        // bottom: 64px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        h3 {
+          a {
+            color: $text;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  section {
+    background-color: $main-color;
+    padding: 30px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+	  flex-wrap: wrap;
+	  gap: 20px;
+      .logo {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        h6 {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+		  color: $text;
+        }
+      }
+      .sites {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .footer_bottom {
+    .container {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      .contact {
+        bottom: 64px;
+        top: auto !important;
+      }
+    }
+  }
+  .card{
+	padding: 96px !important;
   }
 }
 
@@ -89,5 +213,8 @@ $white: #ffffff;
     .card {
       gap: 90px;
     }
+  }
+  .right {
+    gap: 100px !important;
   }
 }
