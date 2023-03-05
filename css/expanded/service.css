@@ -433,6 +433,9 @@ input:focus {
 .about-content .card .img img {
   width: 100%;
 }
+.about-content .card:hover {
+  box-shadow: 0px 0px 10px 1px rgb(208, 208, 208);
+}
 .about-content .card:hover .img {
   display: block;
 }
@@ -497,6 +500,15 @@ input:focus {
   color: #232536;
   margin-bottom: 10px;
   opacity: 0.6;
+}
+.row .right {
+  cursor: pointer;
+}
+.row .right:hover {
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: grayscale(80%);
+  transform: scale(0.95);
 }
 
 #hero2 {

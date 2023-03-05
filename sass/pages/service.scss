@@ -106,8 +106,15 @@
 }
 
 .about-content {
+
   .card {
     margin-top: 40px;
+
+    // object-fit: cover;
+    // &:hover > :not(:hover) {----
+    //   filter: grayscale(80%);
+    //   transform: scale(0.95);
+    // }
 
     cursor: pointer;
     position: relative;
@@ -139,6 +146,7 @@
     }
 
     &:hover {
+      box-shadow: 0px 0px 10px 1px rgb(208, 208, 208);
       .img {
         display: block;
       }
@@ -196,6 +204,24 @@
 
     p {
       @include mixins.p;
+    }
+  }
+  // .right {
+  //   img {
+  //     object-fit: cover;
+  //     &:hover > :not(:hover) {
+  //       filter: grayscale(80%);
+  //       transform: scale(0.95);
+  //     }
+  //   }
+  //   }
+
+  .right {
+    cursor: pointer;
+    &:hover {
+      object-fit: cover;
+      filter: grayscale(80%);
+      transform: scale(0.95);
     }
   }
 }
