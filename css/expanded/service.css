@@ -636,6 +636,10 @@ footer section .container .sites {
 }
 .row .right {
   cursor: pointer;
+  transition: 0.7s;
+}
+.row .right img {
+  width: 100%;
 }
 .row .right:hover {
   filter: grayscale(80%);
@@ -669,5 +673,10 @@ footer section .container .sites {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 140px;
   }
 }
