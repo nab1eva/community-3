@@ -523,7 +523,7 @@ footer section .container .sites {
   margin-top: 40px;
   cursor: pointer;
   position: relative;
-  padding: 32px 11px 28px 32px;
+  padding: 32px 11px 28px 32px !important;
   border: 1px solid rgba(35, 37, 54, 0.17);
   transition: 0.8s;
 }
@@ -539,7 +539,6 @@ footer section .container .sites {
   opacity: 0.2;
 }
 .about-content .card .img {
-  width: 100%;
   display: none;
   position: absolute;
   bottom: -14px;
@@ -557,6 +556,9 @@ footer section .container .sites {
 .about-content .card .card-content {
   display: flex;
   gap: 16px;
+}
+.about-content .card .card-content .icon {
+  width: 100px;
 }
 .about-content .card .card-content .icon img {
   padding: 11px 12px;
@@ -620,8 +622,6 @@ footer section .container .sites {
   cursor: pointer;
 }
 .row .right:hover {
-  -o-object-fit: cover;
-     object-fit: cover;
   filter: grayscale(80%);
   transform: scale(0.95);
 }
