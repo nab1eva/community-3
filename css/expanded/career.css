@@ -9,9 +9,9 @@
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 a {
@@ -225,7 +225,7 @@ footer section .container .sites {
     bottom: 64px;
     top: auto !important;
   }
-  .card {
+  .footer_top .card {
     padding: 96px !important;
   }
 }

@@ -9,9 +9,9 @@
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 a {
@@ -225,7 +225,7 @@ footer section .container .sites {
     bottom: 64px;
     top: auto !important;
   }
-  .card {
+  .footer_top .card {
     padding: 96px !important;
   }
 }
@@ -403,5 +403,105 @@ footer section .container .sites {
   }
   header .primary-button {
     display: none;
+  }
+}
+#s1 {
+  background-color: #232536;
+  padding-top: 156px;
+}
+#s1 .container .s1_top {
+  display: grid;
+  gap: 100px;
+  padding-bottom: 72px;
+}
+#s1 .container .s1_bottom {
+  padding-bottom: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#s1 .container .s1_bottom .text {
+  display: flex;
+  flex-direction: column;
+}
+#s1 .container .s1_bottom .text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.6;
+}
+#s1 .container .s1_bottom .text h6 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+#s1 .container .s1_left h1 {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 68px;
+  color: #ffffff;
+  margin: 24px 0;
+  max-width: 624px;
+}
+#s1 .container .s1_left p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.6;
+  max-width: 528px;
+}
+#s1 .container .s1_left .btn {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: top left;
+  color: #fff;
+  opacity: 0.87;
+  border: none;
+  background-image: url(../../images/service/button.svg);
+  background-color: #444cfc;
+  transition: 0.5s;
+}
+#s1 .container .s1_right {
+  position: relative;
+}
+#s1 .container .s1_right .img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+#s1 .container .s1_right .bottom {
+  position: absolute;
+  bottom: 7px;
+  left: -15px;
+}
+#s1 .container .s1_right .top {
+  position: absolute;
+  top: 0;
+  right: -20px;
+}
+
+@media (min-width: 900px) {
+  #s1 {
+    padding-top: 196px !important;
+  }
+}
+@media (min-width: 1100px) {
+  #s1 .container .s1_top {
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
   }
 }
