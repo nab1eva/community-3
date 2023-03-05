@@ -50,6 +50,15 @@ input:focus {
   display: revert;
 }
 
+<<<<<<< HEAD
+.footer_top {
+  background-color: #ffffff;
+  padding-top: 96px;
+}
+.footer_top .card {
+  position: relative;
+  padding: 96px;
+=======
 footer {
   background-color: #ffffff;
 }
@@ -61,11 +70,16 @@ footer {
 .footer_top .card {
   position: relative;
   padding: 50px;
+>>>>>>> 54c04c87c14d76dcce4d1b165a9df594eeae4f5d
   background-color: #666dff;
   display: flex;
   flex-direction: column;
   gap: 50px;
   align-items: center;
+<<<<<<< HEAD
+  margin-bottom: 96px;
+=======
+>>>>>>> 54c04c87c14d76dcce4d1b165a9df594eeae4f5d
 }
 .footer_top .card .shape1 {
   position: absolute;
@@ -101,6 +115,13 @@ footer {
   font-size: 16px;
   line-height: 24px;
   color: #232536;
+<<<<<<< HEAD
+}
+
+.footer_bottom .container {
+  position: relative;
+  padding-top: 60px;
+=======
   border: none;
 }
 
@@ -111,17 +132,27 @@ footer {
 .footer_bottom .container .left {
   color: #232536;
   padding-bottom: 64px;
+>>>>>>> 54c04c87c14d76dcce4d1b165a9df594eeae4f5d
 }
 .footer_bottom .container .shape3 {
   position: absolute;
   top: 0;
+<<<<<<< HEAD
+  left: 0;
+=======
   left: 20px;
+>>>>>>> 54c04c87c14d76dcce4d1b165a9df594eeae4f5d
 }
 .footer_bottom .container h1 {
   font-weight: 600;
   font-size: 48px;
   line-height: 58px;
   color: #232536;
+<<<<<<< HEAD
+  max-width: 452px;
+}
+
+=======
   max-width: 458px;
 }
 .footer_bottom .container h6 {
@@ -229,6 +260,7 @@ footer section .container .sites {
     padding: 96px !important;
   }
 }
+>>>>>>> 54c04c87c14d76dcce4d1b165a9df594eeae4f5d
 @media (min-width: 800px) {
   .footer_top .card {
     flex-direction: initial !important;
@@ -242,9 +274,12 @@ footer section .container .sites {
   .footer_top .card {
     gap: 90px;
   }
+<<<<<<< HEAD
+=======
   .right {
     gap: 100px !important;
   }
+>>>>>>> 54c04c87c14d76dcce4d1b165a9df594eeae4f5d
 }
 .df-jcsb-aic {
   display: flex;
