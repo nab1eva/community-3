@@ -625,6 +625,7 @@ footer section .container .sites {
   left: 0;
   bottom: 0;
   opacity: 0;
+  width: 100%;
 }
 #s3 .s3_right .card p {
   max-width: 300px;
