@@ -191,10 +191,8 @@ footer {
       }
     }
   }
-  .footer_top {
-    .card {
-      padding: 96px !important;
-    }
+  .footer_top .card {
+    padding: 96px !important;
   }
 }
 
@@ -209,8 +207,6 @@ footer {
     }
   }
 }
-
-
 
 @media (min-width: 900px) {
   .footer_top {
