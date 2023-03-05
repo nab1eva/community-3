@@ -50,6 +50,87 @@ input:focus {
   display: revert;
 }
 
+.footer_top {
+  background-color: #ffffff;
+  padding-top: 96px;
+}
+.footer_top .card {
+  position: relative;
+  padding: 96px;
+  background-color: #666dff;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 96px;
+}
+.footer_top .card .shape1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer_top .card .shape2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+.footer_top .card h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer_top .card h2 {
+  margin-top: 13px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
+  max-width: 480px;
+}
+.footer_top .card input {
+  width: 100%;
+  padding: 20px 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232536;
+}
+
+.footer_bottom .container {
+  position: relative;
+  padding-top: 60px;
+}
+.footer_bottom .container .shape3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.footer_bottom .container h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  color: #232536;
+  max-width: 452px;
+}
+
+@media (min-width: 800px) {
+  .footer_top .card {
+    flex-direction: initial !important;
+    justify-content: space-between;
+  }
+  .footer_top .card input {
+    width: 40%;
+  }
+}
+@media (min-width: 900px) {
+  .footer_top .card {
+    gap: 90px;
+  }
+}
 .df-jcsb-aic {
   display: flex;
   justify-content: space-between;
