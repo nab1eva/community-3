@@ -237,9 +237,7 @@ footer section .container .sites {
   .footer_top .card {
     gap: 90px;
   }
-<<<<<<< HEAD
-=======
-  .right {
+  .footer_bottom .container .right {
     gap: 100px !important;
   }
 }
@@ -651,6 +649,7 @@ footer section .container .sites {
 .row {
   background: #fff;
   max-width: 405px;
+  width: 100%;
 }
 .row .row__bottom {
   padding: 32px 32px;
