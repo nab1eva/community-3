@@ -60,7 +60,7 @@ footer {
 }
 .footer_top .card {
   position: relative;
-  padding: 96px;
+  padding: 50px;
   background-color: #666dff;
   display: flex;
   flex-direction: column;
@@ -195,6 +195,8 @@ footer section .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 footer section .container .logo {
   display: flex;
@@ -222,6 +224,9 @@ footer section .container .sites {
   .footer_bottom .container .contact {
     bottom: 64px;
     top: auto !important;
+  }
+  .card {
+    padding: 96px !important;
   }
 }
 @media (min-width: 800px) {

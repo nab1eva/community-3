@@ -11,7 +11,7 @@ footer {
   padding-bottom: 96px;
   .card {
     position: relative;
-    padding: 96px;
+    padding: 50px;
     background-color: $blue;
     display: flex;
     flex-direction: column;
@@ -157,6 +157,8 @@ footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
+	  flex-wrap: wrap;
+	  gap: 20px;
       .logo {
         display: flex;
         gap: 50px;
@@ -188,6 +190,9 @@ footer {
         top: auto !important;
       }
     }
+  }
+  .card{
+	padding: 96px !important;
   }
 }
 
