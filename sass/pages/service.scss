@@ -56,10 +56,14 @@
 }
 
 // about
-
+#about {
+  background: #f9f9ff;
+  padding-bottom: 96px;
+}
 .about-top {
   position: relative;
-  margin-top: 96px;
+  padding-top: 96px;
+  margin-bottom: 28px;
   p {
     font-style: normal;
     font-weight: 500;
@@ -96,13 +100,15 @@
 
   img {
     position: absolute;
-    top: 0;
+    top: 90px;
     right: 0;
   }
 }
 
 .about-content {
   .card {
+    margin-top: 40px;
+
     cursor: pointer;
     position: relative;
     padding: 32px 11px 28px 32px;
@@ -122,10 +128,14 @@
     }
 
     .img {
+      width: 100%;
       display: none;
       position: absolute;
-      bottom:-14px;
+      bottom: -14px;
       left: 0;
+      img {
+        width: 100%;
+      }
     }
 
     &:hover {
@@ -134,13 +144,11 @@
       }
     }
 
- 
     .card-content {
       display: flex;
       gap: 16px;
       .icon {
         img {
-          width: 100%;
           padding: 11px 12px;
           border-radius: 50%;
           background: rgba(255, 211, 175, 0.17);
@@ -172,6 +180,38 @@
   }
 }
 
+// heroo
+
+.row {
+  padding-bottom: 96px;
+  .left {
+    padding-top: 141px;
+    h4 {
+      @include mixins.h4;
+    }
+
+    h1 {
+      @include mixins.h1;
+    }
+
+    p {
+      @include mixins.p;
+    }
+  }
+}
+
+#hero2 {
+  background: #ecf8f9;
+}
+
+#hero3 {
+  background: #ffffff;
+}
+
+#hero4 {
+  background: #f9f9ff;
+}
+
 @media (min-width: 800px) {
   .home-row {
     display: flex;
@@ -184,5 +224,15 @@
     .home-right {
       margin-top: 48px;
     }
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    @include mixins.grid;
   }
 }
