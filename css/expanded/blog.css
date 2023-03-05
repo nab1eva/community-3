@@ -649,6 +649,7 @@ footer section .container .sites {
 .row {
   background: #fff;
   max-width: 405px;
+  width: 100%;
 }
 .row .row__bottom {
   padding: 32px 32px;

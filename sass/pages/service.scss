@@ -218,6 +218,11 @@
 
   .right {
     cursor: pointer;
+    img {
+
+      width: 100%;
+    }
+    transition: 0.7s;
     &:hover {
       filter: grayscale(80%);
       transform: scale(0.95);
@@ -255,6 +260,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .row {
+    @include mixins.grid;
   }
 
 
