@@ -636,6 +636,7 @@ footer section .container .sites {
 }
 .row .right {
   cursor: pointer;
+  transition: 0.7s;
 }
 .row .right:hover {
   filter: grayscale(80%);
