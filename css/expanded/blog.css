@@ -638,6 +638,7 @@ footer section .container .sites {
 }
 
 .rows {
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

@@ -1,5 +1,5 @@
-@use "../main.scss";
 @use "../abstracts/mixins";
+@use "../main";
 
 .welcome__left-right {
   padding-top: 180px;
@@ -204,6 +204,7 @@
 }
 
 .rows {
+  width: 100%;
   object-fit: cover;
   &:hover > :not(:hover) {
     filter: grayscale(80%);
