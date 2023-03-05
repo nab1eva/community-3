@@ -210,13 +210,15 @@ footer {
   }
 }
 
+
+
 @media (min-width: 900px) {
   .footer_top {
     .card {
       gap: 90px;
     }
   }
-  .right {
+  .footer_bottom .container .right {
     gap: 100px !important;
   }
 }

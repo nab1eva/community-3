@@ -258,7 +258,5 @@
     align-items: center;
   }
 
-  .row {
-    @include mixins.grid;
-  }
+
 }

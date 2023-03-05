@@ -31,11 +31,6 @@ button {
   cursor: pointer;
 }
 
-img {
-  max-inline-size: 100%;
-  max-block-size: 100%;
-}
-
 input:focus {
   outline: none;
 }
@@ -242,7 +237,7 @@ footer section .container .sites {
   .footer_top .card {
     gap: 90px;
   }
-  .right {
+  .footer_bottom .container .right {
     gap: 100px !important;
   }
 }
@@ -405,6 +400,27 @@ footer section .container .sites {
     display: none;
   }
 }
+.btn {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 32px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: top left;
+  color: #fff;
+  opacity: 0.87;
+  border: none;
+  background-image: url(../../images/service/button.svg);
+  background-color: #444cfc;
+  transition: 0.5s;
+}
+
 #home {
   padding-top: 206px;
   padding-bottom: 96px;
@@ -653,10 +669,5 @@ footer section .container .sites {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 140px;
   }
 }
