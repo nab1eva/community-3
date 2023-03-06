@@ -1,0 +1,220 @@
+$main-color: #ffd2a4;
+$blue: #666dff;
+$text: #232536;
+$white: #ffffff;
+
+footer {
+  background-color: $white;
+}
+.footer_top {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  .card {
+    position: relative;
+    padding: 50px;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    .shape1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .shape2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+      height: 100%;
+    }
+    h6 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: $white;
+    }
+    h2 {
+      margin-top: 13px;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 54px;
+      color: $white;
+      max-width: 480px;
+    }
+    input {
+      width: 100%;
+      padding: 20px 30px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #232536;
+      border: none;
+    }
+  }
+}
+
+.footer_bottom {
+  .container {
+    padding-top: 60px;
+    position: relative;
+    .left {
+      color: $text;
+      padding-bottom: 64px;
+    }
+    .shape3 {
+      position: absolute;
+      top: 0;
+      left: 20px;
+    }
+    h1 {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 58px;
+      color: $text;
+      max-width: 458px;
+    }
+    h6 {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: $text;
+      margin: 40px 0 28px;
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: $text;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $text;
+      max-width: 206px;
+      margin-top: 40px;
+    }
+    .right {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+      .bold {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        color: $text;
+        li {
+          a {
+            display: flex;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 28px;
+            color: $text;
+          }
+        }
+      }
+      ul {
+        li {
+          a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            color: $text;
+            margin-bottom: 15px;
+            display: flex;
+          }
+        }
+      }
+      .contact {
+        position: absolute;
+        right: 0;
+        // bottom: 64px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        h3 {
+          a {
+            color: $text;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+footer {
+  section {
+    background-color: $main-color;
+    padding: 30px 0;
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      .logo {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        h6 {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color: $text;
+        }
+      }
+      .sites {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .footer_bottom {
+    .container {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      .contact {
+        bottom: 64px;
+        top: auto !important;
+      }
+    }
+  }
+  .footer_top .card {
+    padding: 96px !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .footer_top {
+    .card {
+      flex-direction: initial !important;
+      justify-content: space-between;
+      input {
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .footer_top {
+    .card {
+      gap: 90px;
+    }
+  }
+  .footer_bottom .container .right {
+    gap: 100px !important;
+  }
+}

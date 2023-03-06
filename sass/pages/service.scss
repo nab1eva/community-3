@@ -1,1 +1,270 @@
 @use "../main.scss";
+@use "../abstracts/mixins";
+
+#home {
+  padding-top: 206px;
+  padding-bottom: 96px;
+  background: #ffe6d2;
+}
+
+.home-left {
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #232536;
+  }
+  h1 {
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 58px;
+    max-width: 625px;
+
+    color: #232536;
+  }
+
+  h4 {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    max-width: 624px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #232536;
+    opacity: 0.6;
+  }
+
+  button {
+    @include mixins.btn;
+  }
+}
+
+.home-right {
+  margin-top: 18px;
+  h2 {
+    font-style: normal;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #232536;
+  }
+}
+
+// about
+#about {
+  background: #f9f9ff;
+  padding-bottom: 96px;
+}
+.about-top {
+  position: relative;
+  padding-top: 96px;
+  margin-bottom: 28px;
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.87;
+  }
+
+  h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    margin-top: 16px;
+    line-height: 58px;
+    font-size: 48px;
+    max-width: 733px;
+    color: #232536;
+  }
+
+  h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 16px;
+    max-width: 642px;
+    color: #232536;
+
+    opacity: 0.87;
+  }
+
+  img {
+    position: absolute;
+    top: 90px;
+    right: 0;
+  }
+}
+
+.about-content {
+  .card {
+    margin-top: 40px;
+
+    // object-fit: cover;
+    // &:hover > :not(:hover) {
+    //   filter: grayscale(80%);
+    //   transform: scale(0.95);
+    // }
+
+    cursor: pointer;
+    position: relative;
+    padding: 32px 11px 28px 32px !important;
+    border: 1px solid rgba(35, 37, 54, 0.17);
+    transition: 0.8s;
+    h5 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      color: #232536;
+
+      opacity: 0.2;
+    }
+
+    .img {
+    
+      display: none;
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      img {
+        width: 100%;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 10px 1px rgb(208, 208, 208);
+      .img {
+        display: block;
+      }
+    }
+
+    .card-content {
+      display: flex;
+      gap: 16px;
+      .icon {
+        width: 100px;
+        img {
+          padding: 11px 12px;
+          border-radius: 50%;
+          background: rgba(255, 211, 175, 0.17);
+        }
+      }
+      .card-left {
+        h1 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          max-width: 72px;
+          color: #000000;
+        }
+
+        p {
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 6px;
+          max-width: 289px;
+          color: #232536;
+
+          opacity: 0.6;
+        }
+      }
+    }
+  }
+}
+
+// heroo
+
+.row {
+  padding-bottom: 96px;
+  .left {
+    padding-top: 141px;
+    h4 {
+      @include mixins.h4;
+    }
+
+    h1 {
+      @include mixins.h1;
+    }
+
+    p {
+      @include mixins.p;
+    }
+  }
+  // .right {
+  //   img {
+  //     object-fit: cover;
+  //     &:hover > :not(:hover) {
+  //       filter: grayscale(80%);
+  //       transform: scale(0.95);
+  //     }
+  //   }
+  //   }
+
+  .right {
+    cursor: pointer;
+    img {
+
+      width: 100%;
+    }
+    transition: 0.7s;
+    &:hover {
+      filter: grayscale(80%);
+      transform: scale(0.95);
+    }
+  }
+}
+
+#hero2 {
+  background: #ecf8f9;
+}
+
+#hero3 {
+  background: #ffffff;
+}
+
+#hero4 {
+  background: #f9f9ff;
+}
+
+@media (min-width: 800px) {
+  .home-row {
+    display: flex;
+    gap: 253px;
+    .home-left {
+      h1 {
+        font-size: 48px;
+      }
+    }
+    .home-right {
+      margin-top: 48px;
+    }
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row {
+    @include mixins.grid;
+  }
+
+
+}
