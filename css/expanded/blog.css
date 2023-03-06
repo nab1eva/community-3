@@ -570,24 +570,24 @@ footer section .container .sites {
   padding: 50px 0 64px;
 }
 
-.card {
+.cards .card {
   max-width: 624px;
   display: flex;
 }
-.card .card__left {
+.cards .card .card__left {
   width: 100%;
   max-width: 300px;
 }
-.card .card__left img {
+.cards .card .card__left img {
   max-width: 300px;
   width: 100%;
   height: 100%;
 }
-.card .card__right {
+.cards .card .card__right {
   background: #f9f9ff;
   padding: 32px 32px;
 }
-.card .card__right h2 {
+.cards .card .card__right h2 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -595,13 +595,13 @@ footer section .container .sites {
   line-height: 36px;
   color: #232536;
 }
-.card .card__right .right_1 {
+.cards .card .card__right .right_1 {
   display: flex;
   align-items: center;
   gap: 15px;
   margin-top: 10px;
 }
-.card .card__right .right_1 p:nth-child(1) {
+.cards .card .card__right .right_1 p:nth-child(1) {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -610,7 +610,7 @@ footer section .container .sites {
   color: #232536;
   opacity: 0.87;
 }
-.card .card__right .right_1 p:nth-child(2) {
+.cards .card .card__right .right_1 p:nth-child(2) {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -645,6 +645,10 @@ footer section .container .sites {
 .rows:hover > :not(:hover) {
   filter: grayscale(80%);
   transform: scale(0.95);
+}
+
+.row__img img {
+  width: 100%;
 }
 
 .row {
@@ -704,12 +708,18 @@ footer section .container .sites {
   }
 }
 @media (min-width: 200px) {
-  .card {
+  .cards {
+    justify-content: center;
+  }
+  .cards .card {
     display: grid;
     grid-template-columns: auto;
   }
-  .card .card__left {
+  .cards .card .card__left {
     margin: 0 auto;
+  }
+  .cards .card .card__left img {
+    width: 100%;
   }
 }
 @media (min-width: 600px) {
@@ -722,18 +732,12 @@ footer section .container .sites {
 @media (min-width: 680px) {
   .cards {
     display: grid;
+    justify-content: center;
     gap: 25px;
   }
-  .card {
+  .cards .card {
     display: grid;
     grid-template-columns: auto auto;
-  }
-}
-@media (min-width: 920px) {
-  .cards {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 25px;
   }
 }
 @media (min-width: 950px) {
@@ -749,6 +753,13 @@ footer section .container .sites {
   .rows {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
+@media (min-width: 1110px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
     gap: 25px;
   }
 }
